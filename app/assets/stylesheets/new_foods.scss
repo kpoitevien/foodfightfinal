@@ -1,0 +1,57 @@
+// Place all the styles related to the New_foods controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+#listCards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.secondSearchInput {
+  height: 94px;
+  width: 1019px;
+  border-radius: 55px;
+  background-color: #1f104d;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-left: 40px;
+  font-size: 30px;
+  color: white;
+}
+
+.secondSearchDiv {
+  padding-left: 70px;
+  padding-bottom: 50px;
+}
+.fa-search {
+  font-size: 48px;
+  color: white;
+  position: absolute;
+  right: 260px;
+  top: 137px;
+}
+
+.mainResultsPage {
+  display: flex;
+  justify-content: center;
+}
+
+.cardParentDiv {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.cardButton {
+  background-color: #03063f;
+  height: 56px;
+  width: 154px;
+  color: #ffffff;
+}
+.card-body a {
+  background-color: #03063f;
+  height: 56px;
+  width: 154px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}

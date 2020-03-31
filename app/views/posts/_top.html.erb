@@ -1,0 +1,25 @@
+<%@posts= @posts.sort_by{|comcount| -comcount.comments.count}%>
+<% @posts.each do |post| %>
+
+<div id="topconvo">
+    <% unless post.comments.count <= 0%>
+    <div id="avatar">
+        <p id="main_gravatar"> <img src="<%= h(gravatar_url(post.user.email, :size => 120)) %>" style="border-radius: 50%"> </p>
+        <p style="font-size:small"><%= post.user.email %></p>
+    </div>
+    <div>
+        <h5> <%= post.title.upcase %></h5>
+        <br>
+
+        <p><%= post.introduction.capitalize %></p>
+    </div>
+    <div id="commentcounter">
+        <%= link_to image_tag("comment.svg", :size => "30x50"), post_path(post) %>
+        <%=post.comments.count %>
+    </div>
+    <br>
+    <hr>
+    <%end%>
+</div>
+
+<% end %>

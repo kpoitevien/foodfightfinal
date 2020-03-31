@@ -1,0 +1,42 @@
+<html>
+
+<body style="background-color:powderblue;">
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Bucket List</th>
+                <th></th>
+                <th style="width: 70%">Description</th>
+                <th style="width: 15%">Due</th>
+                <th style="width: 15%"></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @tasks.each do |task| %>
+            <td>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="word-break:break-word;">
+                        <% if task.completed? %>
+                        <s><%= task.description %></s>
+                        <% else %>
+                        <%= task.description %>
+                        <% end %>
+                    </td>
+                    <td>
+                        <span class="<%= task.due_date_class %>"><%= task.due_date&.strftime('%-m/%-d/%Y') %></span>
+                    </td>
+                    <td><%= render 'buttons', task: task %></td>
+                <tr>
+                </tr>
+                <% end %>
+
+                <% unless params[:status] == 'completed' %>
+                <%= render 'form', task: @task %>
+                <% end %>
+
+</body>
+
+</html>

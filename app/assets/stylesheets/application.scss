@@ -1,0 +1,132 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+
+// <link
+//   rel="stylesheet"
+//   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+//   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+//   crossorigin="anonymous"
+// />
+
+@font-face {
+  font-family: "Mistrain";
+  src: url("./fonts/Mistrain.ttf");
+}
+
+.nav {
+  height: 95px;
+  width: 100vw;
+  background-color: white;
+}
+
+.Brand a {
+  color: #100046;
+  font-family: Mistrain;
+  font-size: 70px;
+  line-height: 95px;
+  text-shadow: 1px 3px 4px rgba(221, 70, 38, 0.52);
+  padding-left: 5px;
+  float: left;
+}
+.Brand a:hover {
+  color: pink;
+}
+.navlinks {
+  height: 31px;
+  width: 142px;
+  color: #180948;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 37px;
+}
+
+// .container {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// body{
+//   width: 100%;
+//     height: auto;
+//     margin: 0px;
+//     padding: 0px;
+//     overflow-x: hidden;
+// // }
+// * {
+//   transition: all 0.3s ease-in-out;
+// }
+
+#navcontainer {
+  clear: both;
+  overflow: auto;
+}
+.navy a {
+  height: 31px;
+  width: 142px;
+  color: #180948;
+  font-family: Overpass;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 37px;
+}
+.navy a:hover {
+  font-size: 45px;
+  color: pink;
+}
+
+ul li {
+  display: inline-block;
+  padding: 30px;
+  font-size: 30px;
+  font-family: Roboto;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li:hover {
+  color: orange;
+}
+
+.leftNavLinks {
+  height: 31px;
+  margin-left: 90px;
+  color: #180948;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.sign-in-form {
+  width: 50%;
+  margin: auto
+}
+
+.field {
+  color: #000142;
+  font-family: Arial Rounded MT Bold;
+  font-weight: 100;
+}
+.actions {
+  color: #000142;
+  font-family: Arial Rounded MT Bold;
+  font-weight: 100;
+}

@@ -1,0 +1,294 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.homepageMainDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.searchDiv button {
+  box-sizing: border-box;
+  height: 75px;
+  width: 151px;
+  border: 1px solid #979797;
+  border-radius: 55px;
+  background-color: #c7c7c7;
+  position: absolute;
+  right: 280px;
+  bottom: 125px;
+  z-index: 3;
+}
+
+.searchInput {
+  position: relative;
+  border-radius: 150px;
+  height: 94px;
+  width: 940px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  font-size: 32px;
+  padding-left: 40px;
+}
+
+.homepageParentDiv {
+  display: flex;
+  justify-content: center;
+  height: 806px;
+  width: 100vw;
+  background-color: #f7a3a3;
+}
+
+@font-face {
+  font-family: "Overpass-Regular";
+  src: url("./fonts/Overpass-Regular.ttf");
+}
+
+.homepageChildDiv h1 {
+  justify-content: center;
+  height: 282px;
+  width: 866px;
+  color: #100046;
+  font-family: Overpass-Regular;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 108px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  padding-top: 60px;
+}
+.fa-search {
+  position: absolute;
+  padding-top: 10px;
+}
+
+.homepage-2div {
+  height: 869px;
+  width: 100vw;
+  background: linear-gradient(180deg, #03063f 0%, #fb8555 100%);
+}
+
+.homepage-2div h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.homepageCardsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+.homepage-3div {
+  max-height: 702px;
+  background-color: white;
+  width: 100vw;
+}
+#drinksImg {
+  position: relative;
+  z-index: 1;
+  top: -505px;
+}
+#info3Div {
+  z-index: 2;
+}
+#drinksImg img {
+  width: 100vw;
+}
+
+.homepage-3div h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 60px;
+  font-weight: 10px;
+}
+.homepage-3div p {
+  font-size: 25px;
+  font-family: sans-serif;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+.homepageStatsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+
+.homepageStatsDiv h2 {
+  color: white;
+}
+
+.homepageStatsDiv h3 {
+  color: white;
+}
+#firstCircleText {
+  color: #ffffff;
+  font-family: Overpass;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 76px;
+}
+#firstCircleText2 {
+  color: #ffffff;
+  font-family: Overpass;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 31px;
+  text-align: center;
+}
+
+#secondCircleText {
+  color: #ffffff;
+  font-family: Overpass;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 55px;
+  text-align: center;
+}
+#thirdCircleText {
+  color: #ffffff;
+  font-family: Overpass;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 55px;
+  text-align: center;
+}
+
+.circleStats {
+  box-sizing: border-box;
+  border-radius: 150px;
+  height: 294px;
+  width: 294px;
+  border: 1px solid #979797;
+  background-color: #03063f;
+  position: relative;
+  z-index: 3;
+}
+
+#cardsMainDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardGroupDiv {
+  height: 400px;
+  width: 300px;
+}
+
+.cardImage {
+  width: 300px;
+  height: 200px;
+}
+
+.flipCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.altCards {
+  max-width: 400px;
+  height: 400px;
+}
+
+#tomato {
+  height: 845px;
+  width: 940px;
+  transform: rotate(-153deg);
+  position: absolute;
+  top: 213px;
+  right: -253px;
+  z-index: 1;
+}
+
+#forumDiv {
+  height: 592px;
+  width: 100vw;
+  background-color: #f9ce52;
+}
+#forumDiv h1 {
+  height: 63px;
+  width: 473px;
+  color: #000000;
+  font-family: Overpass;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 76px;
+  text-align: center;
+}
+#forumDiv h2 {
+  height: 45px;
+  width: 1024px;
+  color: #000000;
+  font-family: Overpass;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 55px;
+}
+
+#homepageCarouselDiv {
+  height: 515px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#homepageCarouselDiv h1 {
+  height: 50px;
+  width: 427px;
+  color: #180948;
+  font-family: Overpass;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 61px;
+  text-align: center;
+}
+.carouselImg {
+  height: 287px;
+  width: 230.63px;
+}
+#carouselDiv {
+  display: flex;
+  justify-content: space-around;
+}
+#carouselTitle {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+#cancercardstitle {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  color: white;
+}
+
+.cardButton {
+  background-color: #03063f;
+  height: 56px;
+  width: 154px;
+  color: #ffffff;
+}
+
+#forum_demo {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+
+#demo_content {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+
+.social {
+  background-color: pink;
+}

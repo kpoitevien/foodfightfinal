@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ingredients: MyString
+  recipe: MyString
+  cook_time: MyString
+  carbs: 
+  calories: 
+  sugars: 
+  fat: 
+  protein: 
+  cholesterol: 
+  sodium: 
+  image: MyString
+  New_food: one
+
+two:
+  ingredients: MyString
+  recipe: MyString
+  cook_time: MyString
+  carbs: 
+  calories: 
+  sugars: 
+  fat: 
+  protein: 
+  cholesterol: 
+  sodium: 
+  image: MyString
+  New_food: two

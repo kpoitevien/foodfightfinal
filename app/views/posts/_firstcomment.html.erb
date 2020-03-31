@@ -1,0 +1,24 @@
+<% @posts.each do |post| %>
+<div id="firstconvo">
+    <% unless post.comments.count > 0%>
+    <div id="nocomments_container">
+        <div>
+            <p id="main_gravatar"> <img src="<%= h(gravatar_url(post.user.email, :size => 20)) %>" style="border-radius: 50%"> </p>
+        </div>
+        <div>
+            <h6> <%= post.title.upcase %></h6>
+
+
+            <p><%= post.introduction.capitalize %></p>
+        </div>
+        <div>
+            <p style="font-size: small"><%= link_to image_tag("comment.svg", :size => "15x25"), post_path(post) %> <%=post.comments.count %></p>
+        </div>
+        <br>
+        <hr>
+        <%end%>
+    </div>
+    <br>
+
+
+    <% end %>

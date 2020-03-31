@@ -1,0 +1,22 @@
+<div id="recipesPageMainDiv">
+  <div id="recipesTitleDiv">
+    <h1 id="recipesTitle"><%= @recipes.food_name%></h1>
+    <h3><%= @recipes.cook_time %>
+  </div>
+  <div id="recipesPageDiv_2">
+    <div id="recipesPageIngredients">
+      <h2>Ingredients:</h2>
+      <span><%= @recipes.ingredients%><span>
+    </div>
+    <div id="recipesPageImgDiv">
+      <img id="recipePageImg" src=<%= @recipes.image%> alt="">
+    </div>
+    
+  </div>
+  <div id="recipesPageDiv_3">
+    <h2 id="recipesPageDirections">Directions:</h2>
+    <div >
+    <div  id="recipeDirectionsDiv"><%= @recipes.recipe %></div>
+    </div>
+  </div>
+</div>

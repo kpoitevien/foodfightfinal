@@ -1,0 +1,68 @@
+<div id="show_daddy_container">
+    <div class="left-show">
+        <br>
+        <%= link_to image_tag("StartConversation.png", :size => "55x220"), new_post_path, :method => :get, :class => "btn"  %>
+    </div>
+    <div id="container">
+        <div style="text-align:center">
+        </div>
+        <div></div>
+        <div style="text-align:center">
+            <span id="Button_All"><%= button_to  "All Discussions", posts_path, :method => :get  %></span>
+            <br>
+        </div>
+        <div id="showpost_gravatar">
+            <p><img src="<%= h(gravatar_url(@post.user.email, :size => 115))%>" style="border-radius: 50%"></p>
+            <p style=" font-size:small"><%= @post.user.email %> <br></p>
+
+        </div>
+
+        <div id="ind_post">
+            <br><br>
+
+            <h3 style="text-align: left"><strong><%= @post.title.capitalize %></strong></h3>
+
+
+            <br>
+
+            <p><%= @post.introduction %></p>
+
+        </div>
+        <div></div>
+        <div></div>
+        <div style="text-align:right">
+            <%= link_to image_tag("logo.svg", :size => "30x50"), post_likes_path(@post), method: :post %>
+            <%=@post.likes.count %>
+            <%= image_tag("comment.svg", :size => "30x50")%>
+            <%=@post.comments.count %>
+
+        </div>
+
+        <div></div>
+        <div></div>
+        <div id="comments_form">
+            <hr>
+            <%= render 'comments/form' %>
+            <br>
+        </div>
+
+        <br><br>
+        <div><br></div>
+
+        <div id="show_comments">
+
+            <% @post.comments.each do |comment| %>
+            <div>
+                <p style="text-align:center"> <%= gravatar_tag comment.user.email, :size => 47 %></p>
+
+                <p style="font-size:small"> <%= comment.user.email %></p>
+            </div>
+            <div>
+                <p><%= comment.body %> </p>
+            </div>
+            <br>
+            <hr>
+            <% end %>
+        </div>
+        <div></div>
+    </div>

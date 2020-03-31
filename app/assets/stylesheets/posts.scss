@@ -1,0 +1,247 @@
+// Place all the styles related to the Main_Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #979797;
+  height: 1px;
+}
+
+#welcome_back {
+  text-align: center;
+  color: #131447;
+  font-family: Overpass;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#main_gravatar {
+  text-align: right;
+  padding-right: 3rem;
+  border-radius: 50%;
+}
+#hello_tag {
+  text-align: left;
+  padding: 5px;
+  margin-right: 15rem;
+}
+
+#quote {
+  font-size: 21px;
+  color: #131447;
+  font-family: Overpass;
+}
+
+
+#Button_All{
+  float: right;
+  color: #131447
+}
+
+#forum-container {
+  font-family: Overpass;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+
+}
+
+#forum-main {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+
+.left-show{
+
+  align-items: middle;
+
+}
+
+.left-forum {
+  align-items: start;
+
+}
+
+#show_daddy_container{
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  margin: 2rem;
+  padding: 2rem;
+  font-family: Overpass;
+
+}
+
+#showpost_gravatar {
+  padding: 4rem;
+}
+
+#ind_post{
+  margin: 1rem;
+  box-shadow:
+  /* The top layer shadow */
+  0 1px 1px rgba(0,0,0,0.15),
+  /* The second layer */
+  0 10px 0 -5px #eee,
+  /* The second layer shadow */
+  0 10px 1px -4px rgba(0,0,0,0.15),
+   /* The third layer */
+  0 20px 0 -10px #eee,
+  /* The third layer shadow */
+  0 20px 1px -9px rgba(0,0,0,0.15);
+  /* Padding for demo purposes */
+  padding: 30px;
+ 
+ 
+ }
+
+//  h3{
+//     color: black;
+//     font-size: 50px;
+//     font-weight: bold;
+
+
+
+// }
+
+#show_comments {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#start-a-conversation {
+
+  height: 43px;
+  width: 201px;
+  background-color: #180948;
+  font-family: Overpass;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 31px;
+  text-align: center;
+}
+
+#topconvo {
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+  margin: 2rem;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 2px 7px 5px #180948;
+}
+
+  
+
+ 
+
+  
+
+#commentcounter {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#firstcomment {
+  margin: 25px;
+  box-shadow: 5px 8px 0px 0px 0.5rem;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 0px #180948;
+  height: 90%;
+}
+a.btn {
+  padding: 0px;
+  text-align: center;
+  font-family: Overpass;
+  font-weight: bold;
+  color: #ffffff;
+  vertical-align: middle;
+}
+#start-a-conversation {
+    height: 43px;
+    width: 201px;
+    background-color: #180948;
+    font-family: Overpass;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  #topconvo{
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    margin: 2rem;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 2px 7px 5px #180948
+  }
+
+  #commentcounter{
+     text-align: center; 
+     vertical-align: middle;
+
+  }
+
+  #firstcomment{
+
+    margin: 25px;
+    box-shadow: 5px 8px 0px 0px  0.5rem ;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0px #180948;
+    height: 90%;
+
+
+  }
+  a.btn{
+      padding: 0px;
+      text-align: center;
+      font-family: Overpass;
+      font-weight: bold;
+      color: #ffffff;
+      vertical-align: middle;
+     
+      
+
+  }
+
+  #new_container{
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    margin: 2rem;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 2px 7px 5px #180948;
+    font-family: Overpass;
+    font-weight: bold;
+    color: #180948;
+
+  }
+
+  #nocomments_container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    font-family: Overpass;
+    
+
+  }
+
+  

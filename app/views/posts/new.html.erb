@@ -1,0 +1,45 @@
+<div id="new_container">
+
+    <div>
+        <%= button_to 'All Discussions',  posts_path, :method => :get  %> <br><br>
+    </div>
+
+    <div>
+        <h2 style="color: #180948">Start Conversation</h2>
+
+        <%= form_with scope: :post, url: posts_path, local: true do |form| %>
+
+        <% if @post.errors.any?%>
+
+        <div id="error_explanation">
+            <h2>
+                <%= pluralize(@post.errors.count, "error") %> prohibited this article from being saved:
+            </h2>
+            <ul>
+                <%@post.errors.full_messages.each do |msg|%>
+                <li> <%= msg %> </li>
+                <%end%>
+            </ul>
+        </div>
+
+        <%end%>
+
+        <p>
+            <%= form.label :topic %><br>
+            <%= form.text_field :title %>
+        </p>
+
+        <p>
+            <%= form.label :Introduce_Your_Topic %><br>
+            <%= form.text_area :introduction %>
+        </p>
+        <br>
+        <p>
+            <%= form.submit %>
+        </p>
+        <% end %>
+
+    </div>
+    <div></div>
+
+</div>

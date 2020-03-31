@@ -1,0 +1,35 @@
+<div id="navContainer">
+    <div class="logo">
+        <h1 class="Brand"><%= link_to "Food Fight", root_path %></h1>
+    </div>
+    <nav>
+        <ul>
+            <span class="leftNavLinks">
+            <% if current_user.present? %>
+                <li class="navy"><%= link_to "Quiz", users_index_path %></li>
+                <li class="navy"><%= link_to "Community", posts_path %></li>
+                <% else %>
+                <li class="navy"><%= link_to "Quiz", new_user_session_path %></li>
+                <li class="navy"><%= link_to "Community", new_user_session_path %></li>
+                <% end %>
+
+            </span>
+            <span class="rightNavLinks">
+                <% if current_user.present? %>
+                <li>
+
+
+                    <%= gravatar_tag current_user.email, :size => 40 %>
+                    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+                </li >
+               <% else %>
+                <li class="navy">
+                    <%= link_to new_user_session_path, method: :get do %>
+                    <i class=" fas fa-user-circle"></i>
+                    <% end %>
+                </li>
+                <% end %>
+            </span>
+        </ul>
+    </nav>
+</div>

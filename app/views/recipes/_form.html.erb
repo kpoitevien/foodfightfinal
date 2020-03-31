@@ -1,0 +1,82 @@
+<% form_with(model: recipe, local: true) do |form| %>
+  <% if recipe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(recipe.errors.count, "error") %> prohibited this recipe from being saved:</h2>
+
+      <ul>
+        <% recipe.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :food_name %>
+    <%= form.text_field :food_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ingredients %>
+    <%= form.text_field :ingredients %>
+  </div>
+
+  <div class="field">
+    <%= form.label :recipe %>
+    <%= form.text_field :recipe %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cook_time %>
+    <%= form.text_field :cook_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :carbs %>
+    <%= form.text_field :carbs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :calories %>
+    <%= form.text_field :calories %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sugars %>
+    <%= form.text_field :sugars %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fat %>
+    <%= form.text_field :fat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :protein %>
+    <%= form.text_field :protein %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cholesterol %>
+    <%= form.text_field :cholesterol %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sodium %>
+    <%= form.text_field :sodium %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :food_id %>
+    <%= form.number_field :food_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

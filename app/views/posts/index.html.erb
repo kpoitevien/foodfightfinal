@@ -1,0 +1,42 @@
+<p id="notice">
+    <%=notice %> </p>
+
+<div>
+    <div id="welcome_back">
+        <p id="main_gravatar"> <img src="<%= h(gravatar_url(@user.email, :size => 220)) %>" style="border-radius: 50%"> </p>
+        <div id="hello_tag">Welcome Back, <%=@user.email%>! <br>
+            <blockquote id="quote" , cite="Winston Churchill">If You're Going Through Hell, Keep Going - Winston Churchill.</blockquote>
+            <li><%= link_to "Bucket Lists", tasks_path %></li>
+        </div>
+    </div>
+    <hr>
+
+    <div id="forum-container">
+
+        <div>
+            <div class="left-forum"> <%= link_to image_tag("StartConversation.png", :size => "55x220"), new_post_path, :method => :get, :class => "btn"  %></div>
+        </div>
+
+        <div id="forum-main">
+
+            <div id="topsection">
+                <h3 style="text-indent:2rem">This week's top conversations</h3>
+
+                <%= render 'top' %>
+            </div>
+            <div id="firstcomment">
+                <h3>Be the first to comment:</h3>
+
+                <%= render 'firstcomment' %>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+    </footer>
+
+</div>

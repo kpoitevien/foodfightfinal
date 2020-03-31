@@ -1,0 +1,73 @@
+// Place all the styles related to the New_recipes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+#recipePageImg {
+  height: 482px;
+  width: 350px;
+  border: 1px solid #979797;
+}
+
+#recipesPageMainDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#recipesTitle {
+  color: #3c3b4a;
+  font-family: "PT Sans";
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 45px;
+}
+
+#recipesPageIngredients {
+  height: 186px;
+  width: 285px;
+  color: #3c3b4a;
+  font-family: "PT Sans";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  padding-top: 70px;
+}
+
+#recipesPageDiv_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 150px;
+}
+#recipesPageImgDiv {
+  padding-left: 200px;
+}
+#recipesPageDiv_3 {
+  height: 258px;
+  width: 380px;
+  color: #3c3b4a;
+  margin-left: 170px;
+  font-family: "PT Sans";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#recipesPageDirections {
+  height: 21px;
+  width: 80px;
+  color: #545457;
+  font-family: "PT Sans";
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+#recipesTitleDiv {
+  display: flex;
+  justify-content: center;
+}
+#recipeDirectionsDiv {
+  padding-left: 50px;
+}

@@ -1,0 +1,8 @@
+<%= form_with(model: [ @post, Comment.new ], local: true) do |form| %>
+
+<p style="text-align:center">
+    <%= form.text_area :body, placeholder: "What are your thoughts?" %> </p>
+<p style=" text-align:right"> <%= form.submit "Comment" %> </p>
+
+
+<% end %>
